@@ -10,7 +10,7 @@ module.exports = {
 			cache: false,
 			success: function(data) {
 				AppActions.receiveResults(data.RelatedTopics);
-				console.log('redeiving data');
+				console.log('receiving data');
 			}.bind(this),
 			error: function(xhr, status, err) {
 				console.log(err);
